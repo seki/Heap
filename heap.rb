@@ -38,7 +38,7 @@ end
 
 if __FILE__ == $0
   h = Heap.new
-  200.times { h.push(rand(10)) }
+  100.times { h.push(rand(10)) }
   ary = []
   while it = h.pop
     ary << it
