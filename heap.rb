@@ -13,8 +13,8 @@ class Heap
 
   def push(obj)
     @ary.push(obj)
+  ensure
     up(@ary.size-1)
-    obj
   end
   
   private
@@ -45,5 +45,3 @@ if __FILE__ == $0
   end
   p ary
 end
-
-  
